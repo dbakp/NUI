@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuUI Kit</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Theme Initialization Script to prevent FOUC -->
+    <script>
+      (function() {
+        try {
+          const localTheme = localStorage.getItem('theme');
+          const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (localTheme === 'dark' || (!localTheme && supportDarkMode)) {
+            document.documentElement.setAttribute('data-theme', 'dark');
+          } else {
+            document.documentElement.setAttribute('data-theme', 'light');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <style>
+      :root {
+        /* Light Mode Variables */
+        --neu-base: #EBECF0;
+        --neu-text: #59657F;
+        --neu-accent: #6C63FF;
+        
+        /* Grays (Light Mode) */
+        --color-gray-300: #D1D5DB;
+        --color-gray-400: #9CA3AF;
+        --color-gray-500: #6B7280;
+        --color-gray-600: #4B5563;
+        --color-gray-700: #374151;
+        --color-gray-800: #1F2937;
+        
+        /* Shadows (Light Mode) */
+        --shadow-flat: 5px 5px 10px #BABECC, -5px -5px 10px #FFFFFF;
+        --shadow-pressed: inset 5px 5px 10px #BABECC, inset -5px -5px 10px #FFFFFF;
+        --shadow-pressed-sm: inset 2px 2px 5px #BABECC, inset -2px -2px 5px #FFFFFF;
+        --shadow-icon: 3px 3px 6px #BABECC, -3px -3px 6px #FFFFFF;
+        --shadow-convex: 6px 6px 12px #BABECC, -6px -6px 12px #FFFFFF;
+        --shadow-concave: inset 6px 6px 12px #BABECC, inset -6px -6px 12px #FFFFFF;
+        
+        --border-light: rgba(255, 255, 255, 0.4);
+        --border-dark: rgba(255, 255, 255, 0.1);
+      }
+
+      [data-theme='dark'] {
+        /* Dark Mode Variables */
+        --neu-base: #292d32;
+        --neu-text: #E0E5EC;
+        
+        /* Grays (Dark Mode - Inverted/Adapted) */
+        --color-gray-300: #4B5563;
+        --color-gray-400: #6B7280;
+        --color-gray-500: #9CA3AF; /* Lighter in dark mode */
+        --color-gray-600: #D1D5DB; /* Lighter in dark mode */
+        --color-gray-700: #E5E7EB; /* Very light in dark mode */
+        --color-gray-800: #F3F4F6;
+        
+        /* Shadows (Dark Mode - Low contrast soft shadows) */
+        --shadow-flat: 5px 5px 10px #1e2024, -5px -5px 10px #343a40;
+        --shadow-pressed: inset 5px 5px 10px #1e2024, inset -5px -5px 10px #343a40;
+        --shadow-pressed-sm: inset 2px 2px 5px #1e2024, inset -2px -2px 5px #343a40;
+        --shadow-icon: 3px 3px 6px #1e2024, -3px -3px 6px #343a40;
+        --shadow-convex: 6px 6px 12px #1e2024, -6px -6px 12px #343a40;
+        --shadow-concave: inset 6px 6px 12px #1e2024, inset -6px -6px 12px #343a40;
+
+        --border-light: rgba(255, 255, 255, 0.05);
+        --border-dark: rgba(0, 0, 0, 0.2);
+      }
+
+      body {
+        background-color: var(--neu-base);
+        color: var(--neu-text);
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      /* Transitions for shadow changes */
+      div, button, input, textarea {
+        transition: box-shadow 0.3s ease, background-color 0.3s ease, color 0.3s ease, transform 0.1s;
+      }
+
+      /* Custom Range Slider Styles */
+      input[type=range] {
+        -webkit-appearance: none; 
+        background: transparent; 
+      }
+      input[type=range]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+      }
+      input[type=range]:focus {
+        outline: none;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+      
+      /* Utility for dynamic borders */
+      .border-white\/20, .border-white\/30, .border-white\/40, .border-white\/50 {
+         border-color: var(--border-light) !important;
+      }
+    </style>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Nunito', 'sans-serif'],
+            },
+            colors: {
+              neu: {
+                base: 'var(--neu-base)',
+                text: 'var(--neu-text)',
+                accent: 'var(--neu-accent)',
+                success: '#10B981',
+                warning: '#F59E0B',
+                danger: '#EF4444'
+              },
+              // Map tailwind grays to CSS variables for automatic mode switching
+              gray: {
+                300: 'var(--color-gray-300)',
+                400: 'var(--color-gray-400)',
+                500: 'var(--color-gray-500)',
+                600: 'var(--color-gray-600)',
+                700: 'var(--color-gray-700)',
+                800: 'var(--color-gray-800)',
+              }
+            },
+            boxShadow: {
+              'neu-flat': 'var(--shadow-flat)',
+              'neu-pressed': 'var(--shadow-pressed)',
+              'neu-pressed-sm': 'var(--shadow-pressed-sm)',
+              'neu-icon': 'var(--shadow-icon)',
+              'neu-convex': 'var(--shadow-convex)',
+              'neu-concave': 'var(--shadow-concave)',
+            },
+            backgroundImage: {
+              // We remove the gradient for better consistency in dark mode, or use a variable if needed
+              'neu-gradient': 'none', 
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

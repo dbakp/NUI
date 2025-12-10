@@ -21,7 +21,7 @@ return (
 {/* Backdrop */}
 <div className="absolute inset-0 bg-gray-100/60 backdrop-blur-sm transition-opacity" onClick={onClose} />
 {/* Dialog Content */}
-<div className="relative w-full max-w-lg bg-gray-100 rounded-3xl p-8 transform transition-all duration-300 animate-in fade-in zoom-in-95 border border-white/20" style={neuStyle('flat')}>
+<div className="relative w-full max-w-lg rounded-3xl p-8 transform transition-all duration-300 animate-in fade-in zoom-in-95 border border-white/20" style={neuStyle('flat')}>
 <div className="flex justify-between items-start mb-6">
 {title && <h2 className="text-2xl font-bold text-gray-700">{title}</h2>}
 <NeuIconButton size="sm" onClick={onClose} className="text-gray-500">

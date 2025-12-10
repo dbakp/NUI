@@ -29,7 +29,7 @@ border border-white/50 ${config.color}
 >
 <Icon size={24} strokeWidth={2} />
 </button>
-<div className="flex-1 p-4 rounded-2xl bg-gray-100 border border-white/20 flex justify-between items-center transition-all " style={neuStyle('flat')}>
+<div className="flex-1 p-4 rounded-2xl border border-white/20 flex justify-between items-center transition-all " style={neuStyle('flat')}>
 <div>
 <h5 className="font-bold text-gray-800 text-sm mb-1">{log.service}</h5>
 <div className="flex items-center gap-2">
@@ -41,7 +41,7 @@ border border-white/50 ${config.color}
 </div>
 </div>
 <div className="flex flex-col items-end gap-1">
-<span className="text-xs font-bold text-gray-400 font-mono bg-gray-100 px-2 py-1 rounded-lg" style={neuStyle('flat')}>
+<span className="text-xs font-bold text-gray-400 font-mono px-2 py-1 rounded-lg" style={neuStyle('flat')}>
 {log.time}
 </span>
 </div>

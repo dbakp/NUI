@@ -27,7 +27,7 @@ ${isAvailable ? 'bg-emerald-500' : isBooked ? 'bg-red-500' : 'bg-gray-400'}
 {features.includes('dock') && <Zap size={14} />}
 </div>
 {isBooked && (
-<div className="absolute inset-0 flex items-center justify-center bg-gray-100/60 backdrop-blur-[1px] rounded-2xl" style={neuStyle('flat')}>
+<div className="absolute inset-0 flex items-center justify-center backdrop-blur-[1px] rounded-2xl" style={neuStyle('flat')}>
 <span className="text-xs font-bold text-red-500 uppercase tracking-widest border border-red-500 px-2 py-1 rounded-lg">
 Booked
 </span>

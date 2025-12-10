@@ -8,7 +8,7 @@ return (
 <div className={`flex gap-4 items-start p-4 rounded-2xl hover:bg-white/30 transition-colors ${className}`}>
 <div className="relative">
 <NeuAvatar src={user.avatar} fallback={user.name[0]} size="sm" />
-<div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-gray-100 flex items-center justify-center text-indigo-500 border border-white/50" style={neuStyle('flat')}>
+<div className="absolute -bottom-1 -right-1 w-5 h-5 rounded-full flex items-center justify-center text-indigo-500 border border-white/50" style={neuStyle('flat')}>
 {icon || <Activity size={10} />}
 </div>
 </div>

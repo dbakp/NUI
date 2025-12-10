@@ -44,7 +44,7 @@ ${localPrinting ? 'h-24 top-2 opacity-100' : printed ? 'h-24 top-32 opacity-0' :
 )}
 </div>
 {/* Front Plate (Covers the paper origin) */}
-<div className="relative z-10 w-full h-full flex flex-col items-center justify-center rounded-3xl bg-gray-100/10 backdrop-blur-[1px]" style={neuStyle('flat')}>
+<div className="relative z-10 w-full h-full flex flex-col items-center justify-center rounded-3xl backdrop-blur-[1px]" style={neuStyle('flat')}>
 {localPrinting ? (
 <>
 <Loader2 size={28} className="text-indigo-500 animate-spin mb-1" />

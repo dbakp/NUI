@@ -47,7 +47,7 @@ title={`${point.label || point.type} (${point.status})`}
 </div>
 {/* Tooltip Label */}
 {point.label && (
-<div className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-100 text-gray-700 text-[10px] font-bold px-2 py-1 rounded-md
+<div className="absolute -top-8 left-1/2 -translate-x-1/2 text-gray-700 text-[10px] font-bold px-2 py-1 rounded-md
 opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 pointer-events-none
 " style={neuStyle('flat')}>
 {point.label}
@@ -56,7 +56,7 @@ opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap z-10 poin
 </button>
 ))}
 {/* Legend */}
-<div className="absolute bottom-4 left-4 bg-gray-100/90 backdrop-blur-sm p-2 rounded-xl border border-white/20 flex gap-4 text-[10px] font-bold uppercase text-gray-500" style={neuStyle('flat')}>
+<div className="absolute bottom-4 left-4 backdrop-blur-sm p-2 rounded-xl border border-white/20 flex gap-4 text-[10px] font-bold uppercase text-gray-500" style={neuStyle('flat')}>
 <div className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-emerald-500" /> Available</div>
 <div className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-red-500" /> Busy</div>
 <div className="flex items-center gap-1"><div className="w-2 h-2 rounded-full bg-amber-500" /> Reserved</div>

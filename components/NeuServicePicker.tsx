@@ -10,7 +10,7 @@ ${className}
 `} style={neuStyle('flat')}>
 <div className="flex items-center gap-4">
 {icon && (
-<div className="w-12 h-12 rounded-xl bg-gray-100 flex items-center justify-center text-indigo-500" style={neuStyle('flat')}>
+<div className="w-12 h-12 rounded-xl flex items-center justify-center text-indigo-500" style={neuStyle('flat')}>
 {icon}
 </div>
 )}
@@ -20,7 +20,7 @@ ${className}
 {price && <p className="text-sm font-bold text-gray-700 mt-1">{price}</p>}
 </div>
 </div>
-<div className="flex items-center gap-4 bg-gray-100 rounded-full p-1" style={neuStyle('flat')}>
+<div className="flex items-center gap-4 rounded-full p-1" style={neuStyle('flat')}>
 <button onClick={() => onChange(Math.max(0, quantity - 1))}
 disabled={quantity === 0}
 className={`

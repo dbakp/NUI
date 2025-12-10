@@ -6,14 +6,14 @@ export const NeuMetricCard: React.FC<MetricCardProps> = ({ title, value, trend, 
 chartPath
 }) => {
 return (
-<div className={`relative p-6 rounded-[2rem] bg-gray-100 border border-white/20 overflow-hidden ${className}`} style={neuStyle('flat')}>
+<div className={`relative p-6 rounded-[2rem] border border-white/20 overflow-hidden ${className}`} style={neuStyle('flat')}>
 <div className="flex justify-between items-start mb-4">
 <div>
 <p className="text-sm font-bold text-gray-400 uppercase tracking-wider">{title}</p>
 <h3 className="text-3xl font-extrabold text-gray-700 mt-2">{value}</h3>
 </div>
 {icon && (
-<div className="w-12 h-12 rounded-2xl flex items-center justify-center text-indigo-500 bg-gray-100" style={neuStyle('flat')}>
+<div className="w-12 h-12 rounded-2xl flex items-center justify-center text-indigo-500" style={neuStyle('flat')}>
 {icon}
 </div>
 )}

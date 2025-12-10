@@ -10,7 +10,7 @@ group rounded-[2rem] bg-gray-100 border border-white/20 p-4 transition-all durat
 ${className}
 `} style={neuStyle('flat')}>
 {/* Image Area */}
-<div className="relative h-48 rounded-2xl overflow-hidden mb-4 bg-gray-100" style={neuStyle('flat')}>
+<div className="relative h-48 rounded-2xl overflow-hidden mb-4" style={neuStyle('flat')}>
 {image ? (
 <img src={image} alt={title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
 ) : (

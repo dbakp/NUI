@@ -18,7 +18,7 @@ return (
 {item.label}
 </a>
 ) : (
-<span className="px-3 py-1 font-bold text-gray-800 rounded-full bg-gray-100/50" style={neuStyle('flat')}>
+<span className="px-3 py-1 font-bold text-gray-800 rounded-full" style={neuStyle('flat')}>
 {item.label}
 </span>
 )}

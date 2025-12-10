@@ -17,7 +17,7 @@ flex flex-col gap-4 ${className}
 <span className="text-xs text-gray-400 font-semibold">{date}</span>
 </div>
 </div>
-<div className="bg-gray-100/50 p-2 rounded-xl" style={neuStyle('flat')}>
+<div className="p-2 rounded-xl" style={neuStyle('flat')}>
 <NeuRating value={rating} readOnly className="!gap-1" />
 </div>
 </div>

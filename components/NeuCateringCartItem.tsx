@@ -7,7 +7,7 @@ export const NeuCateringCartItem: React.FC<CateringCartItemProps> = ({ name, pri
 const [showNotes, setShowNotes] = useState(!!notes);
 const [noteText, setNoteText] = useState(notes || '');
 return (
-<div className={`p-4 rounded-2xl bg-gray-100 border border-white/20 ${className}`} style={neuStyle('flat')}>
+<div className={`p-4 rounded-2xl border border-white/20 ${className}`} style={neuStyle('flat')}>
 <div className="flex justify-between items-start mb-4">
 <div>
 <h4 className="font-bold text-gray-800">{name}</h4>
@@ -18,7 +18,7 @@ return (
 </NeuIconButton>
 </div>
 <div className="flex items-center justify-between gap-4">
-<div className="flex items-center gap-3 bg-gray-100 rounded-full p-1" style={neuStyle('flat')}>
+<div className="flex items-center gap-3 rounded-full p-1" style={neuStyle('flat')}>
 <button onClick={() => onUpdateQuantity(Math.max(1, quantity - 1))}
 className="w-8 h-8 rounded-full flex items-center justify-center bg-gray-100 hover:text-red-500 active:scale-95 transition-all text-gray-500"
 >
@@ -41,7 +41,7 @@ className={`text-xs font-bold flex items-center gap-1 ${showNotes ? 'text-indigo
 {showNotes && (
 <div className="mt-4 animate-in slide-in-from-top-2 duration-200">
 <div className="relative">
-<div className="absolute inset-0 rounded-xl bg-gray-100 pointer-events-none" style={neuStyle('flat')}>
+<div className="absolute inset-0 rounded-xl pointer-events-none" style={neuStyle('flat')}>
 <textarea
 value={noteText}
 onChange={(e) => setNoteText(e.target.value)}

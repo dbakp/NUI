@@ -19,7 +19,7 @@ return (
 );
 }
 return (
-<div className={`flex gap-2 p-1.5 rounded-xl bg-gray-100 ${className}`} style={neuStyle('flat')}>
+<div className={`flex gap-2 p-1.5 rounded-xl ${className}`} style={neuStyle('flat')}>
 {priorities.map((p) => (
 <button
 key={p.value}

@@ -20,7 +20,7 @@ return (
 <span>{startTime}</span>
 <span>{endTime}</span>
 </div>
-<div className="relative h-12 bg-gray-100 rounded-xl w-full overflow-hidden flex items-center px-1" style={neuStyle('flat')}>
+<div className="relative h-12 rounded-xl w-full overflow-hidden flex items-center px-1" style={neuStyle('flat')}>
 {/* Hour Markers (Optional) */}
 <div className="absolute inset-0 flex justify-between px-2 opacity-10 pointer-events-none">
 {[...Array(10)].map((_, i) => <div key={i} className="w-px h-full bg-gray-500"></div>)}

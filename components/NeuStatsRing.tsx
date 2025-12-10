@@ -8,7 +8,7 @@ const gap = 14;
 return (
 <div className={`relative flex items-center justify-center ${className}`} style={{ width: size, height: size }}>
 {/* Base Container Shadow */}
-<div className="absolute inset-0 rounded-full bg-gray-100" style={neuStyle('flat')}>
+<div className="absolute inset-0 rounded-full" style={neuStyle('flat')}>
 <svg width={size} height={size} className="transform -rotate-90 drop-shadow-sm">
 {rings.map((ring, index) => {
 const radius = (size / 2) - (index * gap) - 20;
@@ -46,7 +46,7 @@ className="transition-all duration-1000 ease-out"
 </svg>
 {/* Icons floating on rings (Optional simple legend center) */}
 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-<div className="flex flex-col gap-1 items-center bg-gray-100/80 backdrop-blur-sm p-2 rounded-xl" style={neuStyle('flat')}>
+<div className="flex flex-col gap-1 items-center backdrop-blur-sm p-2 rounded-xl" style={neuStyle('flat')}>
 {rings.map((ring, i) => (
 <div key={i} className="flex items-center gap-1 text-[10px] font-bold text-gray-500">
 <div className="w-2 h-2 rounded-full" style={{ backgroundColor: ring.color }} />

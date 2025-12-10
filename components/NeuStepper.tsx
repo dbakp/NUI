@@ -7,7 +7,7 @@ return (
 <div className={`w-full ${className}`}>
 <div className="flex items-center justify-between relative">
 {/* Background Track (Groove) */}
-<div className="absolute top-1/2 left-0 w-full h-2 -translate-y-1/2 bg-gray-100 rounded-full pointer-events-none z-0" style={neuStyle('convex')}></div>
+<div className="absolute top-1/2 left-0 w-full h-2 -translate-y-1/2 rounded-full pointer-events-none z-0" style={neuStyle('convex')}></div>
 {/* Progress Fill */}
 <div className="absolute top-1/2 left-0 h-2 -translate-y-1/2 bg-indigo-500/20 rounded-full shadow-none pointer-events-none z-0 transition-all duration-500"
 style={{ width: `${(currentStep / (steps.length - 1)) * 100}%` }}

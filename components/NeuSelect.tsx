@@ -45,7 +45,7 @@ ${isOpen ? ' text-indigo-500' : ' hover:-translate-y-0.5 bg-gray-100'}
 <ChevronDown size={18} className={`text-gray-400 transition-transform duration-300 ${isOpen ? 'rotate-180 text-indigo-500' : ''}`} />
 </button>
 {isOpen && (
-<div className="absolute z-50 w-full mt-4 p-2 bg-gray-100 rounded-xl animate-in fade-in zoom-in-95 duration-200" style={neuStyle('flat')}>
+<div className="absolute z-50 w-full mt-4 p-2 rounded-xl animate-in fade-in zoom-in-95 duration-200" style={neuStyle('flat')}>
 <ul className="max-h-60 overflow-auto custom-scrollbar">
 {options.map((option) => (
 <li key={option.value}>

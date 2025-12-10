@@ -13,9 +13,9 @@ onDaysChange([...days, day]);
 }
 };
 return (
-<div className={`p-6 rounded-[2rem] bg-gray-100 border border-white/20 ${className}`} style={neuStyle('flat')}>
+<div className={`p-6 rounded-[2rem] border border-white/20 ${className}`} style={neuStyle('flat')}>
 <div className="flex items-center gap-2 mb-6">
-<div className="text-indigo-500 p-2 rounded-xl bg-gray-100" style={neuStyle('flat')}>
+<div className="text-indigo-500 p-2 rounded-xl" style={neuStyle('flat')}>
 <CalendarClock size={20} />
 </div>
 <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest">Recurring Schedule</h4>

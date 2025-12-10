@@ -42,7 +42,7 @@ flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase track
 <div className="flex-1">
 <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-2">Next Meeting</p>
 {nextMeeting ? (
-<div className="bg-gray-100/50 p-3 rounded-xl border border-white/20" style={neuStyle('flat')}>
+<div className="p-3 rounded-xl border border-white/20" style={neuStyle('flat')}>
 <div className="flex items-center gap-2 text-indigo-500 font-bold text-sm mb-1">
 <Clock size={14} />
 {nextMeeting.time}

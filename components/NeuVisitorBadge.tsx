@@ -11,7 +11,7 @@ return (
 <div className="relative z-10 w-full max-w-[280px] bg-gray-100 rounded-[20px] border border-white/20 p-6 text-center flex flex-col gap-4 overflow-hidden
 " style={neuStyle('flat')}>
 {/* Punch Hole Visual */}
-<div className="absolute top-4 left-1/2 -translate-x-1/2 w-12 h-3 rounded-full bg-gray-100" style={neuStyle('convex')}></div>
+<div className="absolute top-4 left-1/2 -translate-x-1/2 w-12 h-3 rounded-full" style={neuStyle('convex')}></div>
 <div className="mt-6">
 <h5 className="text-[10px] font-bold text-gray-400 uppercase tracking-[0.2em] mb-1">Visitor Pass</h5>
 <h2 className="text-2xl font-extrabold text-gray-800 leading-tight">{visitorName}</h2>

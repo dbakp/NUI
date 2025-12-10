@@ -42,7 +42,7 @@ ${isBusy ? 'bg-red-500 text-white' : 'bg-emerald-500 text-white'}
 </div>
 </div>
 {/* Bottom Panel */}
-<div className="bg-gray-100 p-8 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-20 relative" style={neuStyle('flat')}>
+<div className="p-8 shadow-[0_-10px_40px_rgba(0,0,0,0.05)] z-20 relative" style={neuStyle('flat')}>
 {nextMeeting && (
 <div className="mb-6 flex items-center justify-between">
 <div>

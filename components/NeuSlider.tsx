@@ -13,7 +13,7 @@ return (
 <span className="text-xs font-bold text-indigo-500">{value}%</span>
 </div>
 )}
-<div className="relative h-6 rounded-full flex items-center px-1 bg-gray-100" style={neuStyle('flat')}>
+<div className="relative h-6 rounded-full flex items-center px-1" style={neuStyle('flat')}>
 {/* Fill (Optional, subtle highlight in the groove) */}
 <div className="absolute left-1 top-1 bottom-1 rounded-full bg-indigo-500/10 pointer-events-none" style={{ width: `calc(${percentage}% - 0.5rem)` }}
 />

@@ -28,7 +28,7 @@ Reception Alert
 <h3 className="text-3xl font-extrabold text-gray-800 leading-tight mb-2">
 {visitorName}
 </h3>
-<div className="flex items-start gap-3 mb-8 p-4 rounded-2xl bg-gray-100 border border-white/10" style={neuStyle('flat')}>
+<div className="flex items-start gap-3 mb-8 p-4 rounded-2xl border border-white/10" style={neuStyle('flat')}>
 <div className="mt-1 text-gray-400">
 <UserCheck size={18} />
 </div>

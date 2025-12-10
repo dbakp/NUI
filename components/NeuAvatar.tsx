@@ -22,7 +22,7 @@ ${sizeClasses[size]} rounded-full flex items-center justify-center border-4 bord
 {src ? (
 <img src={src} alt={alt || 'Avatar'} className="w-full h-full object-cover" />
 ) : (
-<div className="w-full h-full bg-gray-100 flex items-center justify-center font-bold text-gray-500" style={neuStyle('flat')}>
+<div className="w-full h-full flex items-center justify-center font-bold text-gray-500" style={neuStyle('flat')}>
 {fallback || alt?.charAt(0).toUpperCase() || '?'}
 </div>
 )}

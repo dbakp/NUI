@@ -34,7 +34,7 @@ onChange(event);
 return (
 <div className={`relative group ${className}`}>
 {/* Background/Shadow Layer */}
-<div className="absolute inset-0 rounded-full pointer-events-none bg-gray-100" style={neuStyle('flat')}>
+<div className="absolute inset-0 rounded-full pointer-events-none" style={neuStyle('flat')}>
 {/* Search Icon */}
 <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 group-focus-within:text-indigo-500 transition-colors">
 <Search size={18} />

@@ -12,7 +12,7 @@ if (value < 90) return 'bg-indigo-500/80';
 return 'bg-indigo-500';
 };
 return (
-<div className={`p-8 rounded-[2.5rem] bg-gray-100 border border-white/20 overflow-hidden ${className}`} style={neuStyle('flat')}>
+<div className={`p-8 rounded-[2.5rem] border border-white/20 overflow-hidden ${className}`} style={neuStyle('flat')}>
 <div className="flex justify-between items-center mb-6">
 <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest">Occupancy Heatmap</h4>
 <div className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase">

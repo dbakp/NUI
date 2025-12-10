@@ -47,7 +47,7 @@ ${isSelected ? ' text-indigo-500 bg-transparent' : isToday ? ' text-indigo-500 f
 return days;
 };
 return (
-<div className={`p-6 rounded-[2rem] bg-gray-100 border border-white/20 w-fit ${className}`} style={neuStyle('flat')}>
+<div className={`p-6 rounded-[2rem] border border-white/20 w-fit ${className}`} style={neuStyle('flat')}>
 <div className="flex items-center justify-between mb-6">
 <button onClick={handlePrevMonth}
 className="w-8 h-8 rounded-full flex items-center justify-center active:translate-y-px text-gray-500"

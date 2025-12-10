@@ -29,7 +29,7 @@ setIsEditing(false);
 if (isEditing) {
 return (
 <div className={`relative ${className}`}>
-<div className="absolute inset-0 rounded-lg bg-gray-100 pointer-events-none" style={neuStyle('flat')}>
+<div className="absolute inset-0 rounded-lg pointer-events-none" style={neuStyle('flat')}>
 <input
 ref={inputRef}
 value={inputValue}

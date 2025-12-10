@@ -13,7 +13,7 @@ ${className}
 <div className="flex items-center gap-2">
 <h4 className="font-bold text-gray-700">{title}</h4>
 {count !== undefined && (
-<span className="px-2 py-0.5 rounded-full bg-gray-100 text-xs font-bold text-gray-500" style={neuStyle('flat')}>
+<span className="px-2 py-0.5 rounded-full text-xs font-bold text-gray-500" style={neuStyle('flat')}>
 {count}
 </span>
 )}

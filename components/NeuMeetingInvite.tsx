@@ -6,7 +6,7 @@ import { neuStyle } from '../neu-styles';
 export const NeuMeetingInvite: React.FC<MeetingInviteProps> = ({ title, organizer, time, location, avatar, status = 'pending', onResponse, className = '' }) => {
 return (
 <div className={`
-p-6 rounded-[2rem] bg-gray-100 border border-white/20
+p-6 rounded-[2rem] border border-white/20
 flex flex-col gap-4 ${className}
 `} style={neuStyle('flat')}>
 <div className="flex justify-between items-start">
@@ -26,7 +26,7 @@ ${status === 'accepted' ? 'text-emerald-500 bg-emerald-500/10' : 'text-red-500 b
 </div>
 )}
 </div>
-<div className="flex flex-col gap-2 p-4 rounded-xl bg-gray-100 border border-white/20" style={neuStyle('flat')}>
+<div className="flex flex-col gap-2 p-4 rounded-xl border border-white/20" style={neuStyle('flat')}>
 <div className="flex items-center gap-3 text-gray-600">
 <Calendar size={16} className="text-indigo-500" />
 <span className="text-sm font-semibold">{time}</span>

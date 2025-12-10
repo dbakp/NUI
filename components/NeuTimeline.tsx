@@ -6,7 +6,7 @@ export const NeuTimeline: React.FC<TimelineProps> = ({ items, className = '' }) 
 return (
 <div className={`relative pl-4 space-y-8 ${className}`}>
 {/* Vertical Track Groove */}
-<div className="absolute top-0 bottom-0 left-[19px] w-1.5 bg-gray-100 rounded-full pointer-events-none" style={neuStyle('flat')}></div>
+<div className="absolute top-0 bottom-0 left-[19px] w-1.5 rounded-full pointer-events-none" style={neuStyle('flat')}></div>
 {items.map((item, index) => {
 const isCompleted = item.status === 'completed';
 const isCurrent = item.status === 'current';

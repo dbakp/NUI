@@ -11,7 +11,7 @@ flex flex-col h-full max-h-[600px]
 ${className}
 `} style={neuStyle('flat')}>
 <div className="flex items-center gap-4 mb-6">
-<div className="w-12 h-12 rounded-2xl bg-gray-100 flex items-center justify-center text-amber-500" style={neuStyle('flat')}>
+<div className="w-12 h-12 rounded-2xl flex items-center justify-center text-amber-500" style={neuStyle('flat')}>
 <AlertTriangle size={24} />
 </div>
 <h3 className="text-xl font-extrabold text-gray-800">{title}</h3>

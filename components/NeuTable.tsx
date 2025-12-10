@@ -3,7 +3,7 @@ import { TableProps } from '../types';
 import { neuStyle } from '../neu-styles';
 export const NeuTable = <T extends Record<string, any>>({ data, columns, className = '' }: TableProps<T>) => {
 return (
-<div className={`overflow-x-auto rounded-3xl bg-gray-100 p-2 border border-white/20 ${className}`} style={neuStyle('flat')}>
+<div className={`overflow-x-auto rounded-3xl p-2 border border-white/20 ${className}`} style={neuStyle('flat')}>
 <table className="w-full text-left border-collapse">
 <thead>
 <tr className="border-b border-gray-300/30">

@@ -27,7 +27,7 @@ return (
 {items.map((item) => {
 const isOpen = openItems.has(item.id);
 return (
-<div key={item.id} className="rounded-[2rem] overflow-hidden bg-gray-100 border border-white/20" style={neuStyle('flat')}>
+<div key={item.id} className="rounded-[2rem] overflow-hidden border border-white/20" style={neuStyle('flat')}>
 <button
 onClick={() => toggleItem(item.id)}
 className={`

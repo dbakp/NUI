@@ -12,21 +12,30 @@ export default {
       },
       colors: {
         neu: {
-          base: '#EBECF0',
-          text: '#59657F',
+          base: 'var(--neu-base)',
+          text: 'var(--neu-text)',
           accent: '#6C63FF',
           success: '#10B981',
           warning: '#F59E0B',
           danger: '#EF4444'
+        },
+        gray: {
+          100: 'var(--neu-base)',
+          300: 'var(--color-gray-300)',
+          400: 'var(--color-gray-400)',
+          500: 'var(--color-gray-500)',
+          600: 'var(--color-gray-600)',
+          700: 'var(--color-gray-700)',
+          800: 'var(--color-gray-800)',
         }
       },
       boxShadow: {
-        'neu-flat': '5px 5px 10px #BABECC, -5px -5px 10px #FFFFFF',
-        'neu-pressed': 'inset 5px 5px 10px #BABECC, inset -5px -5px 10px #FFFFFF',
-        'neu-pressed-sm': 'inset 2px 2px 5px #BABECC, inset -2px -2px 5px #FFFFFF',
-        'neu-icon': '3px 3px 6px #BABECC, -3px -3px 6px #FFFFFF',
-        'neu-convex': '6px 6px 12px #BABECC, -6px -6px 12px #FFFFFF',
-        'neu-concave': 'inset 6px 6px 12px #BABECC, inset -6px -6px 12px #FFFFFF',
+        'neu-flat': 'var(--shadow-flat)',
+        'neu-pressed': 'var(--shadow-pressed)',
+        'neu-pressed-sm': 'var(--shadow-pressed-sm)',
+        'neu-icon': 'var(--shadow-icon)',
+        'neu-convex': 'var(--shadow-convex)',
+        'neu-concave': 'var(--shadow-concave)',
       }
     }
   },

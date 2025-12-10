@@ -13,11 +13,11 @@ onTagsChange([...selectedTags, tag]);
 }
 };
 return (
-<div className={`p-8 rounded-[2rem] bg-gray-100 border border-white/20 text-center ${className}`} style={neuStyle('flat')}>
+<div className={`p-8 rounded-[2rem] border border-white/20 text-center ${className}`} style={neuStyle('flat')}>
 <h3 className="text-lg font-bold text-gray-800 mb-2">How was the meeting room?</h3>
 <p className="text-sm text-gray-500 mb-6">Your feedback helps us improve facility services.</p>
 <div className="flex justify-center mb-8">
-<div className="p-4 rounded-3xl bg-gray-100 inline-flex" style={neuStyle('flat')}>
+<div className="p-4 rounded-3xl inline-flex" style={neuStyle('flat')}>
 <NeuRating value={rating} onChange={onRatingChange} max={5} className="gap-2" />
 </div>
 </div>

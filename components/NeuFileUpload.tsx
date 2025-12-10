@@ -94,9 +94,9 @@ onChange={(e) => e.target.files && handleFiles(e.target.files)}
 {files.length > 0 && (
 <div className="mt-6 space-y-3">
 {files.map(({ file, preview }, index) => (
-<div key={index} className="flex items-center justify-between p-3 rounded-xl bg-gray-100 border border-white/20" style={neuStyle('flat')}>
+<div key={index} className="flex items-center justify-between p-3 rounded-xl border border-white/20" style={neuStyle('flat')}>
 <div className="flex items-center gap-3">
-<div className="w-10 h-10 rounded-lg bg-gray-100 flex items-center justify-center text-indigo-500 overflow-hidden" style={neuStyle('flat')}>
+<div className="w-10 h-10 rounded-lg flex items-center justify-center text-indigo-500 overflow-hidden" style={neuStyle('flat')}>
 {preview ? (
 <img src={preview} alt="Preview" className="w-full h-full object-cover" />
 ) : (

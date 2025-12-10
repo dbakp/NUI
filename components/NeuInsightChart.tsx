@@ -5,7 +5,7 @@ export const NeuInsightChart: React.FC<InsightChartProps> = ({ title, data, maxV
 // Determine max value for scaling if not provided
 const calculatedMax = maxValue || Math.max(...data.map(d => d.value)) * 1.2;
 return (
-<div className={`p-6 rounded-[2rem] bg-gray-100 border border-white/20 ${className}`} style={neuStyle('flat')}>
+<div className={`p-6 rounded-[2rem] border border-white/20 ${className}`} style={neuStyle('flat')}>
 <h3 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6">{title}</h3>
 <div className="flex items-end justify-between gap-2 h-48 relative">
 {/* Y-Axis Grid Lines (Visual only) */}
@@ -24,7 +24,7 @@ return (
 {item.value}
 </div>
 {/* The Bar */}
-<div className="w-full max-w-[24px] bg-gray-100 rounded-t-full rounded-b-lg relative overflow-hidden h-full" style={neuStyle('flat')}>
+<div className="w-full max-w-[24px] rounded-t-full rounded-b-lg relative overflow-hidden h-full" style={neuStyle('flat')}>
 <div className="absolute bottom-0 w-full transition-all duration-1000 ease-out rounded-t-full"
 style={{ height: `${heightPercent}%`, backgroundColor: item.color || '#6C63FF' }} />
 </div>

@@ -15,14 +15,14 @@ setNewEmail('');
 }
 };
 return (
-<div className={`p-6 rounded-[2rem] bg-gray-100 border border-white/20 ${className}`} style={neuStyle('flat')}>
+<div className={`p-6 rounded-[2rem] border border-white/20 ${className}`} style={neuStyle('flat')}>
 <h4 className="text-sm font-bold text-gray-500 uppercase tracking-widest mb-6 px-1">Guest List</h4>
 {guests.length > 0 ? (
 <div className="space-y-3 mb-8 max-h-60 overflow-y-auto custom-scrollbar p-1">
 {guests.map((guest) => (
-<div key={guest.id} className="flex items-center justify-between p-3 pl-4 rounded-2xl bg-gray-100 border border-white/20 group" style={neuStyle('flat')}>
+<div key={guest.id} className="flex items-center justify-between p-3 pl-4 rounded-2xl border border-white/20 group" style={neuStyle('flat')}>
 <div className="flex items-center gap-3 overflow-hidden">
-<div className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center text-gray-400 flex-shrink-0" style={neuStyle('convex')}>
+<div className="w-8 h-8 rounded-full flex items-center justify-center text-gray-400 flex-shrink-0" style={neuStyle('convex')}>
 <User size={14} />
 </div>
 <div className="min-w-0">
@@ -39,7 +39,7 @@ className="text-gray-400 hover:text-red-500 opacity-0 group-hover:opacity-100 tr
 ))}
 </div>
 ) : (
-<div className="text-center py-8 mb-6 bg-gray-100 rounded-2xl border border-white/10" style={neuStyle('flat')}>
+<div className="text-center py-8 mb-6 rounded-2xl border border-white/10" style={neuStyle('flat')}>
 <p className="text-sm text-gray-400 italic">No external guests added yet.</p>
 </div>
 )}

@@ -39,14 +39,14 @@ setTotalSeconds(prev => prev + extension);
 onExtend();
 };
 return (
-<div className={`flex flex-col items-center p-8 rounded-[2.5rem] bg-gray-100 border border-white/20 ${className}`} style={neuStyle('flat')}>
+<div className={`flex flex-col items-center p-8 rounded-[2.5rem] border border-white/20 ${className}`} style={neuStyle('flat')}>
 <div className="flex items-center gap-2 mb-6 opacity-50">
 <Clock size={14} />
 <h4 className="text-xs font-bold uppercase tracking-widest">Meeting Timer</h4>
 </div>
 <div className="relative mb-8 group cursor-default">
 {/* Progress Ring Background */}
-<div className="absolute -inset-4 rounded-full bg-gray-100 opacity-50" style={neuStyle('flat')}>
+<div className="absolute -inset-4 rounded-full opacity-50" style={neuStyle('flat')}>
 {/* Timer Display */}
 <div className="relative w-64 h-32 rounded-3xl bg-gray-100 flex items-center justify-center border border-white/10
 overflow-hidden

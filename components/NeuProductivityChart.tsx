@@ -14,7 +14,7 @@ return (
 <div className={`flex flex-col items-center text-center p-4 ${className}`}>
 <div className="relative w-[100px] h-[100px] mb-3">
 {/* Background Circle (Groove) */}
-<div className="absolute inset-0 rounded-full bg-gray-100" style={neuStyle('flat')}></div>
+<div className="absolute inset-0 rounded-full" style={neuStyle('flat')}></div>
 {/* Progress SVG */}
 <svg className="absolute inset-0 transform -rotate-90 drop-shadow-sm" width={size} height={size}>
 <circle

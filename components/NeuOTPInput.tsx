@@ -54,7 +54,7 @@ return (
 {otp.map((data, index) => (
 <div key={index} className="relative group w-12 h-14">
 {/* Inner Shadow Container */}
-<div className="absolute inset-0 rounded-xl pointer-events-none bg-gray-100" style={neuStyle('flat')}>
+<div className="absolute inset-0 rounded-xl pointer-events-none" style={neuStyle('flat')}>
 <input
 ref={el => { inputRefs.current[index] = el }}
 type="text"

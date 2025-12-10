@@ -51,23 +51,43 @@ export const NeuBadge: React.FC<{ children: React.ReactNode, variant?: 'success'
     children,
     variant = 'neutral'
 }) => {
-    const colors = {
-        success: 'text-emerald-600 bg-emerald-100 border-emerald-200',
-        warning: 'text-amber-600 bg-amber-100 border-amber-200',
-        danger: 'text-red-600 bg-red-100 border-red-200',
-        neutral: 'text-gray-600 bg-gray-100 border-gray-200'
+    const styles = {
+        success: {
+            bg: 'bg-emerald-50',
+            text: 'text-emerald-600',
+            border: 'border-2 border-emerald-300',
+            dot: 'bg-emerald-500'
+        },
+        warning: {
+            bg: 'bg-orange-50',
+            text: 'text-orange-500',
+            border: 'border-2 border-orange-300',
+            dot: 'bg-orange-400'
+        },
+        danger: {
+            bg: 'bg-red-50',
+            text: 'text-red-600',
+            border: 'border-2 border-red-300',
+            dot: 'bg-red-500'
+        },
+        neutral: {
+            bg: 'bg-gray-50',
+            text: 'text-gray-600',
+            border: 'border-2 border-gray-300',
+            dot: 'bg-gray-400'
+        }
     };
 
-    const dotColors = {
-        success: 'bg-emerald-500',
-        warning: 'bg-amber-500',
-        danger: 'bg-red-500',
-        neutral: 'bg-gray-400'
-    };
+    const style = styles[variant];
 
     return (
-        <div className={`px-5 py-2 rounded-full text-sm font-bold border inline-flex items-center gap-2 ${colors[variant]}`}>
-            <span className={`w-2 h-2 rounded-full ${dotColors[variant]} shadow-sm`} />
+        <div
+            className={`px-4 py-1 rounded-full text-xs font-bold inline-flex items-center gap-2 ${style.bg} ${style.text} ${style.border}`}
+            style={{
+                boxShadow: 'inset 0 1px 0 rgba(255, 255, 255, 0.5), 0 1px 2px rgba(0, 0, 0, 0.05)'
+            }}
+        >
+            <span className={`w-1.5 h-1.5 rounded-full ${style.dot}`} />
             {children}
         </div>
     );

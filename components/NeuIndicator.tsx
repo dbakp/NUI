@@ -47,20 +47,27 @@ export const NeuProgressCircle: React.FC<{ progress: number, size?: number }> = 
   );
 };
 
-export const NeuBadge: React.FC<{ children: React.ReactNode, variant?: 'success' | 'warning' | 'danger' | 'neutral' }> = ({ 
-    children, 
-    variant = 'neutral' 
+export const NeuBadge: React.FC<{ children: React.ReactNode, variant?: 'success' | 'warning' | 'danger' | 'neutral' }> = ({
+    children,
+    variant = 'neutral'
 }) => {
     const colors = {
-        success: 'text-neu-success bg-neu-success/10',
-        warning: 'text-neu-warning bg-neu-warning/10',
-        danger: 'text-neu-danger bg-neu-danger/10',
-        neutral: 'text-gray-500 bg-gray-500/10'
+        success: 'text-emerald-600 bg-emerald-100 border-emerald-200',
+        warning: 'text-amber-600 bg-amber-100 border-amber-200',
+        danger: 'text-red-600 bg-red-100 border-red-200',
+        neutral: 'text-gray-600 bg-gray-100 border-gray-200'
+    };
+
+    const dotColors = {
+        success: 'bg-emerald-500',
+        warning: 'bg-amber-500',
+        danger: 'bg-red-500',
+        neutral: 'bg-gray-400'
     };
 
     return (
-        <div className={`px-3 py-1 rounded-lg text-xs font-bold shadow-neu-pressed-sm border border-white/20 inline-flex items-center gap-2 ${colors[variant]}`}>
-            <span className={`w-2 h-2 rounded-full ${variant === 'success' ? 'bg-neu-success' : variant === 'warning' ? 'bg-neu-warning' : variant === 'danger' ? 'bg-neu-danger' : 'bg-gray-400'} shadow-sm`} />
+        <div className={`px-5 py-2 rounded-full text-sm font-bold border inline-flex items-center gap-2 ${colors[variant]}`}>
+            <span className={`w-2 h-2 rounded-full ${dotColors[variant]} shadow-sm`} />
             {children}
         </div>
     );

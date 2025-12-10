@@ -108,6 +108,21 @@
       .border-white\/20, .border-white\/30, .border-white\/40, .border-white\/50 {
          border-color: var(--border-light) !important;
       }
+
+      /* Custom scrollbar styles */
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: var(--color-gray-400);
+        border-radius: 3px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: var(--color-gray-500);
+      }
     </style>
 
     <script>
@@ -165,5 +180,6 @@
 </head>
   <body>
     <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

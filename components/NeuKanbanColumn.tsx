@@ -6,7 +6,7 @@ export const NeuKanbanColumn: React.FC<KanbanColumnProps> = ({ title, count, chi
 className = '' }) => {
 return (
 <div className={`
-flex flex-col bg-gray-100/50 rounded-[2rem] p-4 min-w-[300px] h-full border border-white/10
+flex flex-col rounded-[2rem] p-4 min-w-[300px] h-full border border-white/10
 ${className}
 `} style={neuStyle('flat')}>
 <div className="flex justify-between items-center mb-4 px-2">

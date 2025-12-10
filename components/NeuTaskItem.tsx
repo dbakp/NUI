@@ -13,7 +13,7 @@ high: 'bg-red-500'
 };
 return (
 <div className={`
-flex items-center gap-4 p-4 rounded-2xl bg-gray-100 transition-all duration-300 border border-white/20
+flex items-center gap-4 p-4 rounded-2xl transition-all duration-300 border border-white/20
 ${completed ? 'opacity-60' : ' '}
 ${className}
 `} style={neuStyle('flat')}>
